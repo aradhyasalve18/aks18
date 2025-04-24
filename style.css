@@ -521,4 +521,28 @@ footer {
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .popup-content p {
+    color: black;         /* Make text color black */
+    font-size: 1.4rem;    /* Slightly bigger font size */
+    margin-bottom: 20px;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+  }
   
