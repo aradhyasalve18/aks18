@@ -140,12 +140,21 @@
     <div class="footer-container">
       <h2>Contact Me</h2>
       <div class="contact-form">
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="4" required></textarea>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
           <button type="submit">Send</button>
         </form>
+        
+        <!-- Thank You Popup -->
+        <div id="thankYouPopup" class="popup">
+          <div class="popup-content">
+            <p>Thank you for reaching out!</p>
+            <button onclick="closePopup()">Close</button>
+          </div>
+        </div>
+        
       </div>
       <div class="social-links">
         <a href="#"><i class="fa-brands fa-github"></i></a>
